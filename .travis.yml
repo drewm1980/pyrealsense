@@ -35,10 +35,11 @@ before_install:
     sudo make install;
     cd ..;
     cd ..;
+    ldconfig;
     file /usr/local/lib/librealsense.so.1.12.1;
 
 install:
-    - pip install pycparser numpy nose
+    - pip install pycparser numpy nose ctypes
     - python setup.py install
 
 script:
