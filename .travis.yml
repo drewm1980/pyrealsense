@@ -35,7 +35,7 @@ before_install:
     sudo make install;
     cd ..;
     cd ..;
-    ldconfig;
+    sudo ldconfig;
     file /usr/local/lib/librealsense.so.1.12.1;
 
 install:
